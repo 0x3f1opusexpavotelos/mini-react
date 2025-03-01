@@ -1,0 +1,62 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vue.server.includeLanguages": [
+    "vue",
+    "markdown"
+  ],
+  "[markdown][yaml][json]": {
+    "editor.fontFamily": "'Fira Code'", // handwriting
+    "editor.renderWhitespace": "all",
+  },
+  // layout
+  "workbench.sideBar.location": "right",
+  "explorer.sortOrder": "type",
+  // "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "files.autoSave": "onFocusChange",
+  "debug.toolBarLocation": "docked",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  // -----------------------------------------------------------------------------
+  // IntelliSense: auto-suggestion and completion
+  // -----------------------------------------------------------------
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  // -----------------------------------------------------------------------------
+  // Editor & Inergrated Terminal Font Customization
+  // -----------------------------------------------------------------------------
+  // "editor.fontFamily": "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;", // github primer choice
+  "editor.fontFamily": "'Cascadia Code', Consolas,'Monasapce Argon','Fira Code', monospace",
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font ",
+  "terminal.integrated.fontLigatures": true,
+  // theme
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.iconTheme": "catppuccin-latte",
+  "files.associations": {
+  "*.css": "tailwindcss"
+},
+"editor.quickSuggestions": {
+  "strings": "on"
+}
+}

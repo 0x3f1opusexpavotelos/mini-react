@@ -1,29 +1,38 @@
 {
-  "name": "mini-react-router",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
+  "name": "mini-react",
+  "version": "0.1.0-alpha.1",
+  "author": "0x3f1opusexpavotelos",
   "type": "module",
-  "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
-    "@types/jest": "^29.5.12",
-    "babel-jest": "^29.7.0",
-    "jest": "^29.7.0",
-    "react-test-renderer": "^18.3.1"
-  },
   "imports": {
-    "#react-router-dom": "./src/react-router/index.js",
-    "#react-router": "./src/react-router-dom/index.js"
+    "#react-router-dom": "./react-router/index.js",
+    "#react-router": "./react-router-dom/index.js",
+    "#react": "./react/index.js"
+  },
+  "exports": {
+    ".": {
+      "default" : "./index.js"
+    }
+  },
+  "main": "index.js",
+  "files": [ "react"],
+  "scripts": {
+    "play": "bun dev playground",
+    "prepare": "bun dev "
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "7.6.0",
+    "@babel/preset-react": "7.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "lint-staged": "^15.4.3",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "bun lint-staged"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   }
 }

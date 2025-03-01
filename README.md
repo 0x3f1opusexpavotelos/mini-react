@@ -13,14 +13,44 @@ function flattenRoutes(
  */
 
 function joinPath(paths) {
-  return paths.join('/').replace(/(\/\/) | (\/\/\/)/g, '/')
+  return paths.replace(/(\/\/)/g, '/').join('/')
 }
 ```
 
-在 package.json 中，imports 和 exports 是不同的概念：
+update tar checksums and drop yarn, migrate to bun
+```bash
+bunx yarn --update-checksums
+# remove all yarn config 
+$HOME/.yarnrc
+.config/yarn/global
+# checksum file
+$HOME/.yarn.lock
+```
 
-    exports: 用于定义模块的导出路径，当你的包被其他项目使用时，它们将通过这些路径访问模块。exports 是用于管理对外暴露的 API。
 
-    imports: 用于定义包内部模块的路径别名。imports 允许你为模块的导入路径创建别名，以便在包的内部使用。
+set directory ownership and file permission for zsh tab completion to work
+```bash
+# setting the current user as the owner of dir
+compaudit | xargs chown -R "$(whoami)
+# removing write permissions for group/others for the files in cause:
+compaudit | xargs chmod go-w
+```
 
-Base/Root Directory in package.json 中没有明确的 baseURL 设置。路径解析通常是以 package.json 文件所在的目录为根目录。
+
+
+eslint 
+tslint
+prettier
+lint-staged
+pre-commit hooks
+commitlint
+
+
+```bash
+bun add -D eslint typescript-eslint prettier 
+bun add -D simple-git-hooks lint-staged
+```
+
+
+eslint-config-prettier to use any ESLint config 
+you want and turn off all rules that may conflict with Prettier

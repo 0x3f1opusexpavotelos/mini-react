@@ -1,0 +1,27 @@
+{
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      // markdown
+      "kisstkondoros.vscode-gutter-preview",
+      "bierner.markdown-preview-github-styles",
+      "bierner.github-markdown-preview",
+      //vue
+      "sdras.vue-vscode-snippets",
+      "Vue.volar",
+      "Nuxtr.nuxtr-vscode",
+      // format
+      "formulahendry.auto-close-tag",
+      "quicktype.quicktype",
+      // intelliense
+      "eamodio.gitlens",
+      "liamhammett.inline-parameters",
+      "Catppuccin.catppuccin-vsc-icons",
+
+      // theme
+
+      // debug
+      "WallabyJs.console-ninja",
+      "YoavBls.pretty-ts-errors"
+    ]
+  }

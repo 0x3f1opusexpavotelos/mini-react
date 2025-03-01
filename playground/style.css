@@ -1,0 +1,41 @@
+body {
+    color: #eee;
+    background: linear-gradient(270deg, #4228aa, #aa5d28);
+    background-size: 400% 400%;
+  
+    -webkit-animation: bganimation 24s ease infinite;
+    -moz-animation: bganimation 24s ease infinite;
+    animation: bganimation 24s ease infinite;
+  
+    transition: all 0.5s ease;
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  @keyframes bganimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  main {
+    text-align: center;
+  }
+  
+  img {
+    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 30%;
+    margin: 1rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    background: #000;
+    background-clip: padding-box;
+    border: solid 3px #333;
+  }
+  

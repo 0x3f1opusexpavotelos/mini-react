@@ -1,0 +1,27 @@
+semi: false
+singleQuote: false
+printWidth: 80
+trailingComma: none
+
+overrides: [
+  {
+    files: ["*.json5"],
+    options: {
+      singleQuote: false,
+      quoteProps:  preserve
+    }
+  },
+  {
+    files: ["*.md"],
+    options: {
+      printWidth: 42,
+      semi: false
+    }
+  },
+  {
+    files: ["*.yml"],
+    options: {
+      singleQUote: false
+    }
+  }
+]
